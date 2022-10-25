@@ -1,0 +1,26 @@
+{
+  "name": "note-composer",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardjhong/note-composer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richardjhong/note-composer/issues"
+  },
+  "homepage": "https://github.com/richardjhong/note-composer#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "generate-unique-id": "^2.0.1",
+    "nodemon": "^2.0.20"
+  }
+}
