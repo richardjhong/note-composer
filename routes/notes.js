@@ -2,6 +2,7 @@ const notes = require('express').Router();
 const { readFromFile, readAndAppend, writeToFile } = require('../helpers/fsUtils');
 const uuid = require('../helpers/uuid');
 
+// alreadyUsedUUID helps keep track of current ids already in use
 const alreadyUsedUUID = [];
 
 notes.get('/', (req, res) => {
@@ -15,6 +16,10 @@ notes.get('/', (req, res) => {
   });
 });
 
+
+// if the initialized noteUuid's id already exists in 
+// alreadyUsedUUID, then invoke uuid again and assign another
+// id
 notes.post('/', (req, res) => {
   const { title, text } = req.body;
 
@@ -39,6 +44,9 @@ notes.post('/', (req, res) => {
   }
 })
 
+// filter parsedData and return a new array of notes that have ids
+// not matching that of toDeleteId; once that is done writeToFile rewrites
+// db.json with the filtered notes
 notes.delete('/:uuid', (req, res) => {
   const toDeleteId = req.params.uuid;
 
@@ -47,7 +55,7 @@ notes.delete('/:uuid', (req, res) => {
     const filteredNotes = parsedData.filter(note => !(note.id === toDeleteId))
 
     writeToFile('./db/db.json', filteredNotes)
-    res.send('Note deleted')
+    res.send('Note successfully deleted')
   });
 })
 
