@@ -1,22 +1,7 @@
 [
     {
-        "title": "Note 2",
-        "text": "Text 2",
+        "title": "Starting Note",
+        "text": "Starting text",
         "id": "685b"
-    },
-    {
-        "title": "Note 3",
-        "text": "Text 3",
-        "id": "ce47"
-    },
-    {
-        "title": "Note 4",
-        "text": "Text 4",
-        "id": "4ba8"
-    },
-    {
-        "title": "Grocery List",
-        "text": "Milk\nYogurt\nOrange juice\nCoffee beans",
-        "id": "a5f0"
     }
 ]
