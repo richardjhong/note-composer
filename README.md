@@ -6,7 +6,7 @@
 
 
 ## Description
-This app takes user input on the browser client and via the back end (Node.js and Express.js), contextual HTML routes will create a new note, load an existing note, or delete an existing note. 
+This app takes user input on the browser client and via the back end (Node.js and Express.js), contextual HTML routes will POST a new note, GET an existing note, or DELETE an existing note. 
 
 
 ## Technologies
