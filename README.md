@@ -31,7 +31,7 @@ After cloning the repository, user should run the following command within the t
 ```
 npm install
 ```
-Afterwards check towards the bottom within package.json; the user should see Express version 4.18.2 as a dependency and nodemon version 24.9.0 as a dependency.
+Afterwards check towards the bottom within package.json; the user should see Express version 4.18.2 as a dependency and nodemon version 2.0.20 as a dependency.
 
 ```
 ...
