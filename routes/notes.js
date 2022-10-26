@@ -12,7 +12,7 @@ notes.get('/', (req, res) => {
       if (obj.id) alreadyUsedUUID.push(obj.id)
     })
 
-    res.json(JSON.parse(data))
+    res.json(parsedData)
   });
 });
 
