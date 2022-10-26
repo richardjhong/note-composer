@@ -22,6 +22,7 @@ This app is built with [Node.js](https://nodejs.org/en/), Node.js' native [files
   - [License](#license)
   - [Improvements](#improvements)
   - [Questions](#questions)
+  - [Addendum](#addendum)
 
 
 ## Installation
