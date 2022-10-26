@@ -10,7 +10,7 @@ This app takes user input on the browser client and via the back end (Node.js an
 
 
 ## Technologies
-This app is built with [Node.js](https://nodejs.org/en/), Node.js' native [filesystem](https://nodejs.org/api/fs.html) module, [Express](https://expressjs.com/) npm module (version 8.2.4), and lastly [Nodemon](https://www.npmjs.com/package/nodemon) for convenience on restarting the node on fast iterative additions of code.
+This app is built with [Node.js](https://nodejs.org/en/), Node.js' native [filesystem](https://nodejs.org/api/fs.html) module, [Express](https://expressjs.com/) npm module (version 4.18.2), and lastly [nodemon](https://www.npmjs.com/package/nodemon) (version 2.0.20) for convenience on restarting the node on fast iterative additions of code.
 
 
 ## Table of Contents
