@@ -78,3 +78,6 @@ Another improvement is to better account for uuid within notes.js post. With the
 
 ## Questions
 Questions, comments, concerns? Send me an email at rhong24@gmail.com.
+
+## Addendum
+The screenshot and gif were created while [Dark Reader Chrome Extension](https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=en-US) was enabled, giving a "dark theme". The base functionality of the app remains the same regardless.
