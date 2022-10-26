@@ -7,12 +7,12 @@ const alreadyUsedUUID = [];
 
 notes.get('/', (req, res) => {
   readFromFile('./db/db.json').then((data) => {
-    const parsedData = JSON.parse(data)
+    const parsedData = JSON.parse(data);
     parsedData.forEach(obj => {
       if (obj.id) alreadyUsedUUID.push(obj.id)
-    })
+    });
 
-    res.json(parsedData)
+    res.json(parsedData);
   });
 });
 
@@ -24,7 +24,7 @@ notes.post('/', (req, res) => {
   const { title, text } = req.body;
 
   if (req.body) {
-    let noteUuid = uuid()
+    let noteUuid = uuid();
     if (alreadyUsedUUID.indexOf(noteUuid) !== -1) {
       while (alreadyUsedUUID.indexOf(noteUuid) !== -1) {
         noteUuid = uuid();
@@ -51,12 +51,12 @@ notes.delete('/:uuid', (req, res) => {
   const toDeleteId = req.params.uuid;
 
   readFromFile('./db/db.json').then((data) => {
-    const parsedData = JSON.parse(data)
-    const filteredNotes = parsedData.filter(note => !(note.id === toDeleteId))
+    const parsedData = JSON.parse(data);
+    const filteredNotes = parsedData.filter(note => !(note.id === toDeleteId));
 
-    writeToFile('./db/db.json', filteredNotes)
-    res.send('Note successfully deleted')
+    writeToFile('./db/db.json', filteredNotes);
+    res.send('Note successfully deleted');
   });
-})
+});
 
-module.exports = notes
+module.exports = notes;

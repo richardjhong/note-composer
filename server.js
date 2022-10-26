@@ -10,7 +10,7 @@ app.use(express.static('public'));
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/api', api)
+app.use('/api', api);
 
 // GET Route for notes page
 app.get('/notes', (req, res) =>
@@ -19,7 +19,7 @@ app.get('/notes', (req, res) =>
 
 // GET Route for wildcard pages
 app.get('*', (req, res) =>
-res.sendFile(path.join(__dirname, '/public/index.html'))
+  res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
 app.listen(PORT, () =>
