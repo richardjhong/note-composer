@@ -73,6 +73,8 @@ This app was licensed under the MIT License.
 ## Improvements
 Creating unit tests to check each route would be beneficial to not have to manually use an API client such as Insomnia or Postman. 
 
+Another improvement is to better account for uuid within notes.js post. With the current implementation, in an extreme scenario where every combination of characters from uuid.js's exported function is stored within the alreadyUsedUUID array in notes.js, the while loop within notes' post will never exit and lead to an infinite loop.
+
 
 ## Questions
 Questions, comments, concerns? Send me an email at rhong24@gmail.com.
