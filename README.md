@@ -18,7 +18,7 @@ This app is built with [Node.js](https://nodejs.org/en/), Node.js' native [files
   - [Usage](#usage)
   - [Architecture](#architecture)
   - [Screenshot](#screenshot)
-  - [Video Demo](#demo)
+  - [Live deployment](#deployment)
   - [License](#license)
   - [Improvements](#improvements)
   - [Questions](#questions)
@@ -57,6 +57,9 @@ For this program, the front-end public folder was already created; however the b
 The back-end code uses server.js on the root level to start the server. Routes folder contains the router and performs the middleware and routing functions for retrieving notes from the mock database json, posting a new note, and deleting an existing note. Helpers contains more robust functionality built on filesystem's different methods of reading and writing to files. Lastly, uuid creates pseudo-random ids for any newly created note.
 
 To tie both the front-end and back-end, a user interacts with the browser client and based on the interaction a specific route and request method are called. The server hosted locally then either retrieves data from the db.json file or creates new data and then writes to the db.json file. 
+
+## Deployment
+[Deployed on Heroku](https://note-composer.herokuapp.com/notes)
 
 
 ## Screenshot
