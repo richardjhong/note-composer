@@ -50,7 +50,7 @@ After running the command, the user should expect to see something similar withi
 
 ![screenshot](./assets/images/installation.png)
 
-Next the user can navigate to the homepage of the [app](#deployment).
+Next the user can navigate to the homepage of the app.
 
 ## Architecture
 For this program, the front-end public folder was already created; however the back-end logic, components, and routes needed to completed and plugged into the front-end to create a cohesively working app. 
